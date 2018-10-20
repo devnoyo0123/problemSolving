@@ -1,3 +1,0 @@
-/Users/yosephnoh/Documents/BackJoon/P13460/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/yosephnoh/Documents/BackJoon/P13460/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/yosephnoh/Documents/BackJoon/P13460/cmake-build-debug/CMakeFiles/P13460.dir

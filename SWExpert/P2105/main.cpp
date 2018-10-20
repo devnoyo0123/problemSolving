@@ -112,7 +112,7 @@ int main() {
                             }
                         }
 
-                        for (int c = 1; check && c < a ; ++c) {
+                        for (int c = 1; check && c < a ; ++c) { // <- c < a인 이유 시작한 놈은 탐색할 필요없으니
                             if (curRow - 1 < 0 || curCol + 1 >= N) {
                                 check = false;
 //                                printf("\n실패 왼쪽 벽 넘음\n");
