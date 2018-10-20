@@ -50,6 +50,10 @@ void rotate(string &input){
     }
     ch[0] =tmp; ch[length] = 0;
     input = ch;
+//    ans += ch; 라는 건 ch를 문자열로 보고 뒤에 덧붙이는 것입니다
+        // 그런데 C 스타일의 문자열은 (std::string 말고) 반드시 널 문자로 끝나야 하고,
+                // 널 문자가 없다면 문자열 함수 입장에선 문자열의 끝이 어디인지 알 방법이 없습니다.
+                        // 따라서 반드시 널 문자가 뒤에 붙을 수 있게끔 ch의 크기를 4로 잡아주면 정답을 받습니다.
 }
 
 void split(vector<string> &data, string &input) {
