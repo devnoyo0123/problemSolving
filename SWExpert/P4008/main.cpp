@@ -18,7 +18,7 @@ long long calc() {
     long long res = 0;
     int operator1 = -1;
     for (int i = 0; i < N; ++i) {
-        if (operator1 == -1) {
+        if (operator1 == -1) { // 처음에는 피연산자만 오기 때문에
             res = digit[i];
             operator1 = used[i];
         } else if (operator1 == 0) {// +
@@ -49,6 +49,7 @@ void solve(int cnt) {
 //        cout<<"\n";
 
         long long tmp = calc();
+        // 여기서는요 최대 최소가 각각 독립적인 의미가 아니잖아요. 최소 최대가 동시에 될수도 있잖아요! 그래서 따로따로 해야돼요. if else로 하지마세요.
         if (tmp < min1) {
             min1 = tmp;
         }
@@ -65,13 +66,14 @@ void solve(int cnt) {
         tmp[i] = nums[i];
     }
 
-    for (int j = 0; j < 4; ++j) { // 4가지 연산자 종류 중
+    for (int j = 0; j < 4; ++j) { // 4가지 연산자 종류  0: +, 1: -, 2: *, 3: /
 
         if (nums[j] > 0) { // 연산할 연산자가 있으면
             nums[j]--;
 
-            used[cnt] = j;
-            solve(cnt + 1);
+            used[cnt] = j; //cnt 번째에 j연산자 사용했음.
+            solve(cnt + 1); //여기서 새로운 solve스코프가 하나 확장된다고 생각하면된다. 트리처럼. DFS는 항상 이해할때 트리를 생각하세요!
+            //used[cnt] 를 복구할 필요가 없는게요. 그다음 연산자가 덮어쓰기 때문이에요. 원복할 필요가 없어요.
 
             for (int i = 0; i < 4; ++i) {
                 nums[i] = tmp[i];
@@ -101,10 +103,10 @@ int main() {
         operandCnt += mCnt;
         operandCnt += dCnt;
 
-        nums[0] = pCnt;
-        nums[1] = sCnt;
-        nums[2] = mCnt;
-        nums[3] = dCnt;
+        nums[0] = pCnt; // +
+        nums[1] = sCnt; // -
+        nums[2] = mCnt; // *
+        nums[3] = dCnt; // /
 
         for (int i = 0; i < N; ++i) {
             cin >> digit[i];
