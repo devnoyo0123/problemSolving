@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/yosephnoh/Documents/algorithm/SWExpert/BOJ2933/main.cpp
+iostream
+-
+cstring
+-
+vector
+-
+algorithm
+-
+

@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Codingdojang77_1.dir/main.cpp.o CMakeFiles/Codingdojang77_1.dir/calc.cpp.o CMakeFiles/Codingdojang77_1.dir/print.cpp.o  -o Codingdojang77_1 

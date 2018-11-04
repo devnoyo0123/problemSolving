@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/yosephnoh/Documents/algorithm/SWExpert/Codingdojang77_1/calc.cpp
+calc.h
+/Users/yosephnoh/Documents/algorithm/SWExpert/Codingdojang77_1/calc.h
+
+/Users/yosephnoh/Documents/algorithm/SWExpert/Codingdojang77_1/calc.h
+calcdata.h
+/Users/yosephnoh/Documents/algorithm/SWExpert/Codingdojang77_1/calcdata.h
+
+/Users/yosephnoh/Documents/algorithm/SWExpert/Codingdojang77_1/calcdata.h
+
+/Users/yosephnoh/Documents/algorithm/SWExpert/Codingdojang77_1/main.cpp
+calc.h
+/Users/yosephnoh/Documents/algorithm/SWExpert/Codingdojang77_1/calc.h
+print.h
+/Users/yosephnoh/Documents/algorithm/SWExpert/Codingdojang77_1/print.h
+
+/Users/yosephnoh/Documents/algorithm/SWExpert/Codingdojang77_1/print.cpp
+cstdio
+-
+print.h
+/Users/yosephnoh/Documents/algorithm/SWExpert/Codingdojang77_1/print.h
+
+/Users/yosephnoh/Documents/algorithm/SWExpert/Codingdojang77_1/print.h
+calcdata.h
+/Users/yosephnoh/Documents/algorithm/SWExpert/Codingdojang77_1/calcdata.h
+
