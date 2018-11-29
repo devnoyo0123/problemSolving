@@ -1,5 +1,6 @@
 #include <iostream>
 #include <queue>
+#include <stack>
 
 using namespace std;
 
@@ -14,8 +15,10 @@ int dRow2[] = {-1, -1, 0, 1, 1, 0};
 int dCol2[] = {0, 1, 1, 1, 0, -1}; // 행이 홀수 일때
 
 int num[MAX][MAX];
+int dist[MAX][MAX];
 int map[MAX][MAX][2]; // 이렇게 자료구조를 할 생각 왜 몼했을까..
 int from[MAX][MAX][2];
+
 
 bool moveable(int curRow, int curCol, int nRow, int nCol){
     if( curRow == nRow){
@@ -27,9 +30,17 @@ bool moveable(int curRow, int curCol, int nRow, int nCol){
     }else{
 
         if( curRow < nRow){
-
+            if( curCol < nCol){
+                return map[curRow][curCol][0] == map[nRow][nCol][1];
+            }else{
+                return map[curRow][curCol][1] == map[nRow][nCol][0];
+            }
         }else{
-
+            if( curCol < nCol){
+                return map[curRow][curCol][0] == map[nRow][nCol][1];
+            }else{
+                return map[curRow][curCol][1] == map[nRow][nCol][0];
+            }
         }
 
     }
@@ -49,6 +60,7 @@ void solve(int row, int col) {
     from[row][col][0] = -1;
     from[row][col][1] = -1;
 
+    dist[row][col] = 1;
     Q.push({row, col});
 
     while (!Q.empty()) {
@@ -59,12 +71,16 @@ void solve(int row, int col) {
         for (int i = 0; i < 6; ++i) {
 
             if (tmp.first % 2 == 0) {
+                // 행이 짝수임
                 nRow = tmp.first + dRow1[i];
                 nCol = tmp.second + dCol1[i];
 
                 if (lineCheck(nRow, nCol)) {
-                    if (moveable(tmp.first, tmp.second, nRow, nCol)) {
-
+                    if (moveable(tmp.first, tmp.second, nRow, nCol) && dist[nRow][nCol] != 0) {
+                        dist[nRow][nCol] = dist[tmp.first][tmp.second] + 1;
+                        Q.push({nRow, nCol});
+                        from[nRow][nCol][0] = tmp.first;
+                        from[nRow][nCol][1] = tmp.second;
                     }
                 }
             } else {
@@ -72,8 +88,11 @@ void solve(int row, int col) {
                 nCol = tmp.second + dCol2[i];
 
                 if (lineCheck(nRow, nCol)) {
-                    if (moveable(tmp.first, tmp.second, nRow, nCol)) {
-
+                    if (moveable(tmp.first, tmp.second, nRow, nCol) && dist[nRow][nCol] != 0) {
+                        dist[nRow][nCol] = dist[tmp.first][tmp.second] + 1;
+                        Q.push({nRow, nCol});
+                        from[nRow][nCol][0] = tmp.first;
+                        from[nRow][nCol][1] = tmp.second;
                     }
                 }
             }
@@ -112,7 +131,8 @@ int main() {
     }
 
     solve(0, 0);
-
+    cout<<dist[n-1][n-1]<<"\n";
+    stack<pair<int, int> > st;
 
     return 0;
 }

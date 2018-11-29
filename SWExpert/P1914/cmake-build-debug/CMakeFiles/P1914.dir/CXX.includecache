@@ -6,8 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/Users/yosephnoh/Documents/BackJoon/P1914/main.cpp
+/Users/yosephnoh/Documents/algorithm/SWExpert/P1914/main.cpp
 iostream
+-
+cmath
 -
 vector
 -
