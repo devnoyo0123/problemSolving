@@ -31,8 +31,13 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="504">
               <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+=======
+            <state relative-caret-position="272">
+              <caret line="57" lean-forward="true" selection-end-line="59" selection-end-column="1" />
+>>>>>>> 10aebce0faa01b44cdd3793477543f51ebe6eec3
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -108,12 +113,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543490555153</updated>
+<<<<<<< HEAD
       <workItem from="1543490556455" duration="6516000" />
+=======
+      <workItem from="1543490556455" duration="4192000" />
+>>>>>>> 10aebce0faa01b44cdd3793477543f51ebe6eec3
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="6516000" />
+=======
+    <option name="totallyTimeSpent" value="4192000" />
+>>>>>>> 10aebce0faa01b44cdd3793477543f51ebe6eec3
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="6" />
@@ -124,7 +137,11 @@
       <window_info anchor="bottom" id="Messages" weight="0.32978722" />
       <window_info anchor="bottom" id="CMake" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32978722" />
+>>>>>>> 10aebce0faa01b44cdd3793477543f51ebe6eec3
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
@@ -151,8 +168,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="504">
           <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+=======
+        <state relative-caret-position="272">
+          <caret line="57" lean-forward="true" selection-end-line="59" selection-end-column="1" />
+>>>>>>> 10aebce0faa01b44cdd3793477543f51ebe6eec3
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
