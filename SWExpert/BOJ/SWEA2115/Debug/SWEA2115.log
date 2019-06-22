@@ -1,0 +1,6 @@
+﻿  소스.cpp
+\\mac\home\documents\algorithm\swexpert\boj\swea2115\소스.cpp(56): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+\\mac\home\documents\algorithm\swexpert\boj\swea2115\소스.cpp(69): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+\\mac\home\documents\algorithm\swexpert\boj\swea2115\소스.cpp(52): warning C4101: 'sum' :참조되지 않은 지역 변수입니다.
+  SWEA2115.vcxproj -> \\Mac\Home\Documents\algorithm\SWExpert\BOJ\Debug\SWEA2115.exe
+  SWEA2115.vcxproj -> \\Mac\Home\Documents\algorithm\SWExpert\BOJ\Debug\SWEA2115.pdb (Full PDB)

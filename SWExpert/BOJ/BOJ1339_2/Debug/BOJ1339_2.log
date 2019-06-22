@@ -1,0 +1,4 @@
+﻿  소스.cpp
+\\mac\home\documents\algorithm\swexpert\boj\boj1339_2\소스.cpp(60): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  BOJ1339_2.vcxproj -> \\Mac\Home\Documents\algorithm\SWExpert\BOJ\Debug\BOJ1339_2.exe
+  BOJ1339_2.vcxproj -> \\Mac\Home\Documents\algorithm\SWExpert\BOJ\Debug\BOJ1339_2.pdb (Full PDB)
